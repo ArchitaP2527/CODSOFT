@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 window.addEventListener('load', () => {
   setTimeout(() => {
-    alert("Welcome to Archita's Portfolio!");
+    alert("Welcome to demo's Portfolio!");
   }, 500);
 });
 
@@ -29,5 +29,5 @@ document.querySelectorAll('.project-item').forEach(item => {
 
 const contactSection = document.querySelector('#contact');
 contactSection.addEventListener('click', () => {
-  alert("📧 Email: archita.2585@gmail.com\n📱 Phone: +91-9099925805");
+  alert("📧 Email: demo.2585@gmail.com\n📱 Phone: +91- 951732648");
 });
