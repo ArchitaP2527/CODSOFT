@@ -1,0 +1,169 @@
+/* Container setup */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #fff;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+/* Display screen */
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 2rem;
+  padding: 10px;
+  text-align: right;
+  border: none;
+  background: #eaeaea;
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #bbb;
+}
+
+/* General key styles */
+.buttons button {
+  background: #fff;
+  border: none;
+  padding: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buttons button:active {
+  background: #ddd;
+}
+
+/* Operator keys */
+.buttons button:nth-last-child(odd),
+.buttons button:nth-last-child(3),
+.buttons button:nth-child(4),
+.buttons button:nth-child(8),
+.buttons button:nth-child(12),
+.buttons button:nth-child(16) {
+  background: #f0f0f0;
+}
+
+/* Equals key spanning */
+.buttons button:nth-child(15) {
+  grid-column: 3 / 4;
+}
+.buttons button:nth-child(14) {
+  /* "=" button is the 14th in your 16-button layout; adjust if needed */
+  grid-column: span 2;
+  background: #e67e22;
+  color: #fff;
+}
+
+/* Clear key *//* BASE STYLES ----------------------------------------------------------- */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #fff;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* DISPLAY */
+#display {
+  width: 100%;
+  height: 70px;
+  :contentReference[oaicite:1]{index=1}
+  padding: 15px;
+  :contentReference[oaicite:2]{index=2}
+  border: none;
+  background: #e6e6e6;
+  :contentReference[oaicite:3]{index=3}
+}
+
+/* BUTTON GRID */
+.buttons {
+  display: grid;
+  :contentReference[oaicite:4]{index=4}
+  gap: 1px;
+  background: #bbb;
+}
+
+/* BUTTON STYLES */
+.buttons button {
+  background: #fff;
+  border: none;
+  padding: 22px;
+  :contentReference[oaicite:5]{index=5}
+  :contentReference[oaicite:6]{index=6}
+  cursor: pointer;
+  outline: none;
+}
+:contentReference[oaicite:7]{index=7}
+  background: #f0f0f0;
+  :contentReference[oaicite:8]{index=8}
+}
+:contentReference[oaicite:9]{index=9}
+  :contentReference[oaicite:10]{index=10}
+  background: #ddd;
+}
+:contentReference[oaicite:11]{index=11}
+  :contentReference[oaicite:12]{index=12}
+}
+
+/* OPERATOR KEYS */
+.operator {
+  background: #f9f9f9;
+}
+:contentReference[oaicite:13]{index=13}
+
+/* EQUALS BUTTON */
+.equals {
+  :contentReference[oaicite:14]{index=14}
+  background: #e67e22;
+  color: #fff;
+}
+:contentReference[oaicite:15]{index=15}
+:contentReference[oaicite:16]{index=16}
+
+/* CLEAR BUTTON */
+.clear {
+  background: #e74c3c;
+  color: #fff;
+}
+:contentReference[oaicite:17]{index=17}
+:contentReference[oaicite:18]{index=18}
+
+/* RESPONSIVE DESIGN */
+:contentReference[oaicite:19]{index=19}
+  :contentReference[oaicite:20]{index=20}
+  :contentReference[oaicite:21]{index=21}
+}
+
+.buttons button:first-child {
+  background: #e74c3c;
+  color: #fff;
+}
